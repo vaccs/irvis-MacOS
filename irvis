@@ -1,0 +1,4 @@
+#!/bin/bash
+IRVIS=`dirname $0`
+OS=`uname`
+java --module-path $IRVIS/javafx-sdk-11.0.2-$OS/lib --add-modules javafx.controls -jar $IRVIS/irvis.jar $*
